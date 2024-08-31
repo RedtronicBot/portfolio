@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route } from "react-router-dom"
 
 /*Pages*/
 import Accueil from './pages/Accueil'
@@ -15,7 +15,7 @@ import BetWise from './pages/projets/BetWise'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 	<React.StrictMode>
-		<Router basename='/'>
+		<Router base='/'>
 			<Routes>
 				<Route path='/' element={<Accueil/>}/>
 				<Route path='/booki' element={<Booki/>}/>
