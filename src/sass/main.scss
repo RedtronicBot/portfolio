@@ -212,12 +212,30 @@ a
 			width: 380px;	
 		}
 	}
-	&_formation
+	&_bloc_carousel
 	{
 		display: flex;
-		gap:10px;
 		justify-content: center;
-		margin-top: 25px;
+		align-items: center;
+		gap: 30px;
+		width: fit-content;
+		margin:0 auto;
+	}
+	&_chevron
+	{
+		transform: rotate(180deg);
+	}
+	&_formation
+	{
+		margin: 25px auto 0 auto;
+		width: 617px;
+		overflow: hidden;
+		position: relative;
+	}
+	&_carousel
+	{
+		display: flex;
+    	transition: transform 0.5s ease;	
 	}
 	&_capacite
 	{
@@ -319,6 +337,8 @@ a
 		height: 250px;
 		background-color: #EDF7FA;
 		box-shadow: 8px 7px 3px 0px rgba(0,0,0,0.15);
+		transform: scale(1);
+  		transition: transform 1s;
 		&_text
 		{
 			display: flex;
@@ -347,6 +367,10 @@ a
 			width: 700px;
 			height: 250px;
 		}
+	}
+	&_content:hover
+	{
+		transform: scale(1.05);
 	}
 }
 

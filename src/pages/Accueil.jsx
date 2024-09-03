@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser';
 import '../style/style.css'
 import dot from '../images/dot_colorful.png'
 import portrait from '../images/portrait.png'
+import chevron from '../images/chevron.svg'
 /*Images Projets*/
 import Kasa from '../images/projets/Kasa.png'
 import Piiquante from '../images/projets/Piiquante.png'
@@ -13,8 +15,50 @@ import Universeva from '../images/projets/Universeva.png'
 import Betwise from '../images/projets/Betwise.png'
 /*Icone Contact */
 import phone from '../images/phone.svg'
-import mail from '../images/mail.svg'
+import mail_icon from '../images/mail.svg'
 function Accueil() {
+
+    const carouselRef = useRef(null)
+    const itemsRef = useRef(0)
+    const [index,setIndex] = useState(0)
+    const [nom,setNom] = useState('')
+    const [mail,setMail] = useState('')
+    const [message,setMessage] = useState('')
+    carouselRef.current = document.querySelector('.cv_carousel')
+    itemsRef.current = document.querySelectorAll('.cv_descriptif')
+
+    const prevContent = () => {
+        const newIndex = index === 0 ? itemsRef.current.length - 1 : index - 1
+        carouselRef.current.style.transform = `translateX(-${newIndex * 617}px)`
+        setIndex(newIndex) 
+    }
+    const afterContent = () => {
+        const newIndex = index === itemsRef.current.length - 1 ? 0 : index + 1
+        carouselRef.current.style.transform = `translateX(-${newIndex * 617}px)`
+        setIndex(newIndex) 
+    }
+    
+    const sendEmail = (e) => {
+        e.preventDefault()
+        
+        const templateParams = {
+            from_name:nom,
+            from_email:mail,
+            message:message
+        }
+        emailjs.send("service_xaujdyd", "template_gj2tobk", templateParams, "S5RBqBjYE0vWKIpO4")
+        .then((response) => {
+                console.log('Email envoyé', response)
+                setNom('')
+                setMail('')
+                setMessage('')
+            },
+            (error) => {
+                console.log('Erreur:', error.text)
+            },
+        )
+    }
+    
   return (
     <div>
         <div className="nav">
@@ -35,7 +79,7 @@ function Accueil() {
             <div className="about_me_presentation">
                 <h1 className="about_me_presentation_title">Bienvenue !</h1>
                 <div className="about_me_presentation_paragraph">
-                    <p>Je suis Théo Desurvire,<span>Développeur Intégrateur Web</span>diplômé Openclassrooms. Dans ce  portfolio, vous pourrez découvrir les projets menés lors de ma formation ainsi que les projets personnels.</p>
+                    <p>Je suis Théo Desurvire,<span>Développeur Intégrateur Web</span>diplômé Openclassrooms. Dans ce  portfolio, vous pourrez découvrir les projets menés lors de ma formation ainsi que mes projets personnels.</p>
                 </div>
                 <div className="about_me_presentation_bouton">
                     <a href="#cv" className="bouton_primary">CV</a>
@@ -47,48 +91,54 @@ function Accueil() {
         <div className="cv" id='cv'>
             <h1 className='main_title'>CV</h1>
             <div className="puce"><div></div><p>Formation</p></div>
-            <div className="cv_formation">
-                <div className="cv_descriptif">
-                    <div className="cv_descriptif_points">
-                        <h2 className='cv_descriptif_points_date'>2022-2023</h2>
-                        <p className='cv_descriptif_points_diplome'>Diplôme développeur intégrateur web</p>
-                        <p className='cv_descriptif_points_ecole'>Openclassrooms</p>
-                    </div>
-                    <div className="cv_descriptif_resume">
-                        <p>Formation  de niveau Bac + 2, sous forme de projets d'entreprise avec scénario, je  devais rendre une soutenance pour présenter mon travail fourni.
-                            <br/>Les projets sont:
-                            <br/>-Kasa: Location de logement, React.js, Node.js
-                            <br/>-Piiquante: Vente de sauce piquante(back-end), Node.js, MongoDB
-                            <br/>-Kanap: Vente de mobilier, HTML, CSS, JS
-                            <br/>-La Panthere: Optimisation du site d’une agence de Web Design, HTML, CSS
-                            <br/>-OhMyFood: Landing page de plusieurs restaurants,HTML,CSS
-                            <br/>-Booki: Site d’hébergements, HTML, CSS
-                        </p>
-                    </div>
-                </div> 
-                <div className="cv_descriptif">
-                    <div className="cv_descriptif_points">
-                        <h2 className='cv_descriptif_points_date'>2020-2022</h2>
-                        <p className='cv_descriptif_points_diplome'>Licence PCST(Non validé)</p>
-                        <p className='cv_descriptif_points_ecole'>Faculté de Neuville sur oise</p>
-                    </div>
-                    <div className="cv_descriptif_resume">
-                        <p>
-                            Ayant eu grand intérêt pour la physique-chimie, je me suis tourné vers une licence PCST (Physique-Chimie Science de la Terre)
-                            <br/>mais  ne voyant pas continuer dans ce domaine, je me suis tourné vers ce qui  était au départ un simple hobby : le développement web
-                        </p>
+            <div className="cv_bloc_carousel">
+                <div onClick={()=>prevContent()}><img src={chevron} alt='chevron' height={48} className='cv_chevron' /></div>
+                <div className="cv_formation">
+                    <div className="cv_carousel" ref={carouselRef}>
+                        <div className="cv_descriptif">
+                            <div className="cv_descriptif_points">
+                                <h2 className='cv_descriptif_points_date'>2022-2023</h2>
+                                <p className='cv_descriptif_points_diplome'>Diplôme développeur intégrateur web</p>
+                                <p className='cv_descriptif_points_ecole'>Openclassrooms</p>
+                            </div>
+                            <div className="cv_descriptif_resume">
+                                <p>Formation  de niveau Bac + 2, sous forme de projets d'entreprise avec scénario, je  devais rendre une soutenance pour présenter mon travail fourni.
+                                    <br/>Les projets sont:
+                                    <br/>-Kasa: Location de logement, React.js, Node.js
+                                    <br/>-Piiquante: Vente de sauce piquante(back-end), Node.js, MongoDB
+                                    <br/>-Kanap: Vente de mobilier, HTML, CSS, JS
+                                    <br/>-La Panthere: Optimisation du site d’une agence de Web Design, HTML, CSS
+                                    <br/>-OhMyFood: Landing page de plusieurs restaurants,HTML,CSS
+                                    <br/>-Booki: Site d’hébergements, HTML, CSS
+                                </p>
+                            </div>
+                        </div> 
+                        <div className="cv_descriptif">
+                            <div className="cv_descriptif_points">
+                                <h2 className='cv_descriptif_points_date'>2020-2022</h2>
+                                <p className='cv_descriptif_points_diplome'>Licence PCST(Non validé)</p>
+                                <p className='cv_descriptif_points_ecole'>Faculté de Neuville sur oise</p>
+                            </div>
+                            <div className="cv_descriptif_resume">
+                                <p>
+                                    Ayant eu grand intérêt pour la physique-chimie, je me suis tourné vers une licence PCST (Physique-Chimie Science de la Terre)
+                                    <br/>mais  ne voyant pas continuer dans ce domaine, je me suis tourné vers ce qui  était au départ un simple hobby : le développement web
+                                </p>
+                            </div>
+                        </div>
+                        <div className="cv_descriptif">
+                            <div className="cv_descriptif_points">
+                                <h2 className='cv_descriptif_points_date'>2019-2020</h2>
+                                <p className='cv_descriptif_points_diplome'>Bac Général Scientifique</p>
+                                <p className='cv_descriptif_points_ecole'>Lycée Saint-Exupéry de Mantes-la-jolie</p>
+                            </div>
+                            <div className="cv_descriptif_resume">
+                                <p>Lors de ma Terminale, j'ai pu choisir l'option ISN (Informatique et Sciences du Numérique) dans  l'idée de devenir développeur. J'y ai appris les fondements de l'HTML  et du CSS mais surtout du Python. N'ayant pas l'idée du domaine voulu et  peu conquis par cette matière, j'ai décidé de me concentrer vers les  sciences.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className="cv_descriptif">
-                    <div className="cv_descriptif_points">
-                        <h2 className='cv_descriptif_points_date'>2019-2020</h2>
-                        <p className='cv_descriptif_points_diplome'>Bac Général Scientifique</p>
-                        <p className='cv_descriptif_points_ecole'>Lycée Saint-Exupéry de Mantes-la-jolie</p>
-                    </div>
-                    <div className="cv_descriptif_resume">
-                        <p>Lors de ma Terminale, j'ai pu choisir l'option ISN (Informatique et Sciences du Numérique) dans  l'idée de devenir développeur. J'y ai appris les fondements de l'HTML  et du CSS mais surtout du Python. N'ayant pas l'idée du domaine voulu et  peu conquis par cette matière, j'ai décidé de me concentrer vers les  sciences.</p>
-                    </div>
-                </div>
+                <div onClick={()=>afterContent()}><img src={chevron} alt='chevron' height={48} /></div>
             </div>
             <div className="cv_capacite">
                 <div className="cv_capacite_components">
@@ -114,7 +164,7 @@ function Accueil() {
                         </div>
                         <div className="cv_capacite_content">
                             <p><span className='puce_caree'></span>Motivé</p>
-                            <p><span className='puce_caree'></span>Persévérent</p>
+                            <p><span className='puce_caree'></span>Persévérant</p>
                         </div>
                     </div>
                 </div>
@@ -132,12 +182,12 @@ function Accueil() {
                 </div>
                 <div className='cv_capacite_separation'></div>
                 <div className="cv_capacite_components">
-                    <div className="puce_nogap"><div></div><p>Centre d'intéret</p></div>
+                    <div className="puce_nogap"><div></div><p>Centre d'Intérêt</p></div>
                     <p className="cv_capacite_components_interet">La programmation, l’électronique, la musique, le bricolage, les mangas, les jeux vidéos</p>
                 </div>
             </div>
             <div className="cv_recommendation">
-                <div className="puce_nogap"><div></div><p>Recommendation</p></div>
+                <div className="puce_nogap"><div></div><p>Recommandation</p></div>
                 <p className="cv_recommendation_texte">“J'ai eu l'occasion de mentorer Théo dans le développement d'applications Web, et j'ai pu constater de près son sérieux et son autonomie. Théo a su faire face aux difficultés qu’il a rencontrées avec une implication continue pour atteindre les objectifs, Ce sera avec plaisir que je collaborai avec lui dans l'avenir et je le recommande fortement car il a le potentiel et le profil nécessaire pour réussir dans le domaine du développement.”</p>
                 <p className="cv_recommendation_auteur">Reda Chennoufi Ingénieur Génie Logiciel</p>   
             </div>
@@ -222,7 +272,7 @@ function Accueil() {
                 </div>
             </div>
             <div className="projets_components">
-                <div className="puce_nogap"><div></div><p>Projets Personnel</p></div>
+                <div className="puce_nogap"><div></div><p>Projets Personnels</p></div>
                 <div className="projets_subcomponents">
                     <div className="projets_content">
                         <a href='/universeva'>
@@ -262,7 +312,7 @@ function Accueil() {
                     </div>
                 </div>
                 <div className="contact_bloc">
-                    <div className="contact_icone"><img src={mail} width={28} height={28} alt='mail' /></div>
+                    <div className="contact_icone"><img src={mail_icon} width={28} height={28} alt='mail' /></div>
                     <div className="contact_bloc_text">
                         <p className="contact_bloc_text_title">Envoyer moi un mail !</p>
                         <a href='mailto:theo.desurvire78@gmail.com'>theo.desurvire78@gmail.com</a>
@@ -270,21 +320,23 @@ function Accueil() {
                 </div>
             </div>
             <p className="contact_sup_formulaire"><span className="contact_trait"></span>OU<span className="contact_trait"></span></p>
-            <div className="contact_formulaire">
-                <div className='contact_formulaire_input'>
-                    <input type='text'/>
-                    <span>Nom</span>
+            <form onSubmit={sendEmail}>
+                <div className="contact_formulaire">
+                    <div className='contact_formulaire_input'>
+                        <input type='text' name='user_name' onChange={(e)=>setNom(e.target.value)}/>
+                        <span>Nom</span>
+                    </div>
+                    <div className='contact_formulaire_input'>
+                        <input type='email' name='user_email' onChange={(e)=>setMail(e.target.value)}/>
+                        <span>Email</span>
+                    </div>
+                    <div className='contact_formulaire_input'>
+                        <textarea name='message' onChange={(e)=>setMessage(e.target.value)}></textarea>
+                        <span>Message</span>
+                    </div>
+                    <button className="bouton_primary">Envoyer le message</button>
                 </div>
-                <div className='contact_formulaire_input'>
-                    <input type='email'/>
-                    <span>Email</span>
-                </div>
-                <div className='contact_formulaire_input'>
-                    <textarea></textarea>
-                    <span>Message</span>
-                </div>
-                <button className="bouton_primary">Envoyer le message</button>
-            </div>
+            </form>
         </div>
     </div>
   )

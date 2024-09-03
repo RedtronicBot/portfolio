@@ -185,11 +185,26 @@ a {
 .cv_descriptif_resume {
   width: 380px;
 }
-.cv_formation {
+.cv_bloc_carousel {
   display: flex;
-  gap: 10px;
   justify-content: center;
-  margin-top: 25px;
+  align-items: center;
+  gap: 30px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.cv_chevron {
+  transform: rotate(180deg);
+}
+.cv_formation {
+  margin: 25px auto 0 auto;
+  width: 617px;
+  overflow: hidden;
+  position: relative;
+}
+.cv_carousel {
+  display: flex;
+  transition: transform 0.5s ease;
 }
 .cv_capacite {
   display: flex;
@@ -278,6 +293,8 @@ a {
   height: 250px;
   background-color: #EDF7FA;
   box-shadow: 8px 7px 3px 0px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  transition: transform 1s;
 }
 .projets_content_text {
   display: flex;
@@ -301,6 +318,9 @@ a {
   justify-content: space-between;
   width: 700px;
   height: 250px;
+}
+.projets_content:hover {
+  transform: scale(1.05);
 }
 
 /*Css de contact*/
