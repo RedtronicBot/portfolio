@@ -509,7 +509,7 @@ form
 .booki footer
 {
     background-color: #F2F2F2;
-    height: 100%;
+    height: fit-content;
     width:95%;
     margin-left: 55px;
     margin-top: 50px;
