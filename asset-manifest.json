@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1d436421.css",
-    "main.js": "/portfolio/static/js/main.082e6810.js",
+    "main.css": "/portfolio/static/css/main.9d6b3863.css",
+    "main.js": "/portfolio/static/js/main.e2635f85.js",
     "static/media/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg": "/portfolio/static/media/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.09d204ed638b7fa6d5b2.jpg",
     "static/media/jay-wennington-N_Y88TWmGwA-unsplash.jpg": "/portfolio/static/media/jay-wennington-N_Y88TWmGwA-unsplash.a4f8ff417d5edf70e6c0.jpg",
     "static/media/stil-u2Lp8tXIcjw-unsplash.jpg": "/portfolio/static/media/stil-u2Lp8tXIcjw-unsplash.4e7cf3326cf48aa765f6.jpg",
@@ -61,18 +61,20 @@
     "static/media/person-solid.svg": "/portfolio/static/media/person-solid.109574a4c52a7b3d62d56176aaa5ae3b.svg",
     "static/media/star-solid.svg": "/portfolio/static/media/star-solid.f9fff8ad696f71908237054f4c5e503e.svg",
     "static/media/circle-notch-solid.svg": "/portfolio/static/media/circle-notch-solid.a161ff85fce94cf6499bf5bb897e033f.svg",
+    "static/media/bars-solid.svg": "/portfolio/static/media/bars-solid.c1ead544445b8f0fef2a8b2b7c24e45e.svg",
     "static/media/heart-solid.svg": "/portfolio/static/media/heart-solid.30975b9abd68d99adbcb67e8af2760b5.svg",
     "static/media/magnifying-glass-solid.svg": "/portfolio/static/media/magnifying-glass-solid.2ec9095c91defdc2d836eb9e39749034.svg",
     "static/media/info-solid.svg": "/portfolio/static/media/info-solid.ddb2006ea87688f32815d1f9a23f3531.svg",
     "static/media/arrow-left-solid.svg": "/portfolio/static/media/arrow-left-solid.34c7b365559d1e51daf4394e2d7138cb.svg",
     "static/media/circle-check-solid.svg": "/portfolio/static/media/circle-check-solid.78c5a108ad562f0f560db741d0f2fcdd.svg",
     "static/media/mobile-screen-button-solid.svg": "/portfolio/static/media/mobile-screen-button-solid.b15df8937593a3f48329c4e9686b0e58.svg",
+    "static/media/chevron.svg": "/portfolio/static/media/chevron.0cc2834c5b72ead6355dcf336cea13c4.svg",
     "static/media/location-dot-solid.svg": "/portfolio/static/media/location-dot-solid.bc52c126a8a9f8a031f4829b78803a5d.svg",
-    "main.1d436421.css.map": "/portfolio/static/css/main.1d436421.css.map",
-    "main.082e6810.js.map": "/portfolio/static/js/main.082e6810.js.map"
+    "main.9d6b3863.css.map": "/portfolio/static/css/main.9d6b3863.css.map",
+    "main.e2635f85.js.map": "/portfolio/static/js/main.e2635f85.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d436421.css",
-    "static/js/main.082e6810.js"
+    "static/css/main.9d6b3863.css",
+    "static/js/main.e2635f85.js"
   ]
 }
