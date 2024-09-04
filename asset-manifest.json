@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9d6b3863.css",
+    "main.css": "/portfolio/static/css/main.ddceb6ac.css",
     "main.js": "/portfolio/static/js/main.0f5db082.js",
     "static/media/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg": "/portfolio/static/media/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.09d204ed638b7fa6d5b2.jpg",
     "static/media/jay-wennington-N_Y88TWmGwA-unsplash.jpg": "/portfolio/static/media/jay-wennington-N_Y88TWmGwA-unsplash.a4f8ff417d5edf70e6c0.jpg",
@@ -70,11 +70,11 @@
     "static/media/mobile-screen-button-solid.svg": "/portfolio/static/media/mobile-screen-button-solid.b15df8937593a3f48329c4e9686b0e58.svg",
     "static/media/chevron.svg": "/portfolio/static/media/chevron.0cc2834c5b72ead6355dcf336cea13c4.svg",
     "static/media/location-dot-solid.svg": "/portfolio/static/media/location-dot-solid.bc52c126a8a9f8a031f4829b78803a5d.svg",
-    "main.9d6b3863.css.map": "/portfolio/static/css/main.9d6b3863.css.map",
+    "main.ddceb6ac.css.map": "/portfolio/static/css/main.ddceb6ac.css.map",
     "main.0f5db082.js.map": "/portfolio/static/js/main.0f5db082.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d6b3863.css",
+    "static/css/main.ddceb6ac.css",
     "static/js/main.0f5db082.js"
   ]
 }
