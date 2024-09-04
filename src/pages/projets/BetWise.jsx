@@ -12,7 +12,7 @@ function BetWise() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
                     <a href='/portfolio/#/universeva'>Universeva</a> 
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div></div>
             </div>
             <h1 className='main_title'>BetWise</h1>
@@ -33,7 +33,7 @@ function BetWise() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
                     <a href='/portfolio/#/universeva'>Universeva</a>   
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div></div>
             </div>
         </div>

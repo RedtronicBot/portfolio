@@ -12,7 +12,7 @@ function Universeva() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />  
                     <a href='/portfolio/#/booki'>Booki</a> 
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/betwise'>BetWise</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
@@ -36,7 +36,7 @@ function Universeva() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />  
                     <a href='/portfolio/#/booki'>Booki</a> 
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/betwise'>BetWise</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />

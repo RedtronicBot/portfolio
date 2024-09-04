@@ -20,7 +20,7 @@ function OhMyFood() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
                     <a href='/portfolio/#/la_panthere'>La Panthère</a>   
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/booki'>Booki</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
@@ -52,7 +52,7 @@ function OhMyFood() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
                     <a href='/portfolio/#/la_panthere'>La Panthère</a>   
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/booki'>Booki</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />

@@ -9,7 +9,7 @@ function Kasa() {
         <div className='projets_page'>
             <div className='projets_page_nav'>
                 <div></div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/piiquante'>Piiquante</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
@@ -30,7 +30,7 @@ function Kasa() {
             </div>
             <div className='projets_page_nav'>
                 <div></div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/piiquante'>Piiquante</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />

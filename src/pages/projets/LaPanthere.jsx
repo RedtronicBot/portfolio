@@ -12,7 +12,7 @@ function LaPanthere() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
                     <a href='/portfolio/#/kanap'>Kanap</a>   
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/ohmyfood'>OhMyFood</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
@@ -36,7 +36,7 @@ function LaPanthere() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
                     <a href='/portfolio/#/kanap'>Kanap</a>   
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/ohmyfood'>OhMyFood</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />

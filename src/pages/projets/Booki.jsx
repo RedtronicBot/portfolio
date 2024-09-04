@@ -10,7 +10,7 @@ function Booki() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
                     <a href='/portfolio/#/ohmyfood'>OhMyFood</a> 
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/universeva'>Universeva</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
@@ -33,7 +33,7 @@ function Booki() {
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
                     <a href='/portfolio/#/ohmyfood'>OhMyFood</a>   
                 </div>
-                <a href='/'>Retour</a>
+                <a href='/portfolio'>Retour</a>
                 <div className='projets_page_nav_components'>
                     <a href='/portfolio/#/universeva'>Universeva</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
