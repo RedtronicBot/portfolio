@@ -1,0 +1,610 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Boutons*/
+.bouton_primary {
+  display: flex;
+  height: 56px;
+  background-color: #0DB760;
+  border-radius: 12px;
+  color: white;
+  padding: 0px 5px;
+  min-width: 140px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.bouton_secondary {
+  display: flex;
+  height: 56px;
+  border: solid 2px #0DB760;
+  border-radius: 12px;
+  padding: 0px 5px;
+  min-width: 140px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.main_title {
+  font-size: 50px;
+  font-weight: 500;
+  border-bottom: solid 2px #0DB760;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.puce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 30px;
+  font-weight: 500;
+  width: fit-content;
+  margin-left: 50px;
+}
+.puce div {
+  width: 15px;
+  height: 15px;
+  background-color: #0DB760;
+  border-radius: 50%;
+}
+
+.puce_nogap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 30px;
+  font-weight: 500;
+  width: fit-content;
+}
+.puce_nogap div {
+  width: 15px;
+  height: 15px;
+  background-color: #0DB760;
+  border-radius: 50%;
+}
+
+.puce_caree {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  background-color: #0047FF;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/*Css du nav*/
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 0 50px;
+  height: 90px;
+  background-color: white;
+  z-index: 999;
+}
+.nav_description {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+}
+.nav_description h2 {
+  font-family: "Roboto Slab";
+  font-size: 24px;
+}
+.nav_components {
+  display: flex;
+  gap: 40px;
+  text-transform: uppercase;
+}
+.nav_burger {
+  display: none;
+}
+.nav_lien {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.about_me {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_me_presentation {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  margin-top: 110px;
+}
+.about_me_presentation_title {
+  font-size: 60px;
+  font-weight: 500;
+}
+.about_me_presentation_paragraph {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 721px;
+}
+.about_me_presentation_paragraph span {
+  color: #0DB760;
+  margin: 0px 6px;
+}
+.about_me_presentation_bouton {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/*Css du CV*/
+.cv {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+.cv_descriptif {
+  display: flex;
+}
+.cv_descriptif_points {
+  display: flex;
+  flex-direction: column;
+  width: 237px;
+  gap: 45px;
+}
+.cv_descriptif_points_date {
+  font-size: 30px;
+  font-weight: 500;
+  color: #0DB760;
+}
+.cv_descriptif_points_diplome {
+  font-size: 20px;
+  font-weight: 500;
+}
+.cv_descriptif_points_ecole {
+  font-size: 18px;
+}
+.cv_descriptif_resume {
+  width: 380px;
+}
+.cv_bloc_carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.cv_chevron {
+  transform: rotate(180deg);
+}
+.cv_formation {
+  margin: 25px auto 0 auto;
+  width: 617px;
+  overflow: hidden;
+  position: relative;
+}
+.cv_carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.cv_capacite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 65px;
+  padding: 0 50px;
+}
+.cv_capacite_components {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  max-width: 350px;
+  height: 170px;
+  gap: 30px;
+}
+.cv_capacite_components_interet {
+  text-align: center;
+}
+.cv_capacite_content_box {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  width: inherit;
+  height: 100%;
+}
+.cv_capacite_content_box p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.cv_capacite_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+.cv_capacite_separation {
+  display: flex;
+  width: 3px;
+  height: 115px;
+  background-color: #0DB760;
+}
+.cv_recommendation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  width: 65%;
+  margin: 65px auto 0 auto;
+}
+.cv_recommendation_texte {
+  text-align: center;
+}
+.cv_recommendation_auteur {
+  font-weight: 500;
+}
+
+.no_center {
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+/*Css de la partie Projets*/
+.projets {
+  display: flex;
+  flex-direction: column;
+  margin: 65px 50px 0 50px;
+}
+.projets_components {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.projets_subcomponents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 70px;
+  margin: 50px 0px;
+}
+.projets_content {
+  display: flex;
+  width: 700px;
+  height: 250px;
+  background-color: #EDF7FA;
+  box-shadow: 8px 7px 3px 0px rgba(0, 0, 0, 0.15);
+  transform: scale(1);
+  transition: transform 1s;
+}
+.projets_content_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.projets_content_text_main {
+  border-left: 4px solid #0DB760;
+  padding-left: 5px;
+}
+.projets_content_text_main_name {
+  color: #0DB760;
+  font-size: 24px;
+  font-weight: 500;
+}
+.projets_content_text_description {
+  text-align: center;
+}
+.projets_content a {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  height: 250px;
+}
+.projets_content:hover {
+  transform: scale(1.05);
+}
+
+/*Css de contact*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact_moyen_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 200px;
+}
+.contact_icone {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #0DB760;
+}
+.contact_bloc {
+  display: flex;
+  gap: 15px;
+}
+.contact_bloc_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.contact_bloc_text_title {
+  font-size: 14px;
+  color: #92929D;
+}
+.contact_trait {
+  display: flex;
+  background-color: #0DB760;
+  width: 40px;
+  height: 3px;
+  margin: 0 5px;
+}
+.contact_sup_formulaire {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin: 25px 0;
+}
+.contact_formulaire {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 30px;
+}
+.contact_formulaire_input {
+  display: flex;
+  position: relative;
+}
+.contact_formulaire input, .contact_formulaire textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+  font-family: "Roboto";
+  font-size: 18px;
+}
+.contact_formulaire textarea {
+  height: 100px;
+}
+.contact_formulaire input:focus {
+  outline: 2px solid #0DB760;
+}
+.contact_formulaire span {
+  position: absolute;
+  background-color: white;
+  left: 10px;
+  top: -6px;
+  font-size: 12px;
+}
+
+/*Css des pages dédié au projets*/
+.projets_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projets_page_date {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 25px 0;
+}
+.projets_page_text {
+  text-align: center;
+  width: 60%;
+}
+.projets_page_nav {
+  display: flex;
+  margin: 25px auto;
+  width: 80%;
+  justify-content: space-between;
+}
+.projets_page_nav a {
+  border-bottom: solid 2px #0DB760;
+}
+.projets_page_nav_components {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.projets_page_arrow {
+  height: 16px;
+}
+.projets_page_arrow_reverse {
+  transform: rotate(180deg);
+  height: 16px;
+}
+.projets_page_webpage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.projets_page_webpage_images {
+  width: 50%;
+  aspect-ratio: 16/9;
+}
+.projets_page_webpage_images_bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.no_ratio {
+  aspect-ratio: unset;
+}
+
+@media screen and (max-width: 1370px) {
+  .about_me {
+    flex-direction: column;
+  }
+  .about_me_presentation {
+    margin-top: 150px;
+    align-items: center;
+  }
+  .about_me_presentation_title {
+    font-size: 50px;
+  }
+  .about_me_presentation_paragraph {
+    font-size: 18px;
+    width: 95vw;
+  }
+  .about_me_presentation_bouton {
+    gap: 15px;
+  }
+  .about_me img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 95%;
+    height: auto;
+  }
+  .nav {
+    padding: 0 10px;
+  }
+  .nav h2 {
+    font-size: 16px;
+  }
+  .nav p {
+    font-size: 12px;
+  }
+  .nav_burger {
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .nav_burger_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 32px;
+    left: -10px;
+    transform: scaleX(0);
+    transform-origin: top;
+    transition: transform 0.5s ease-in-out;
+    background-color: #e7eff1;
+    width: 100vw;
+    gap: 20px;
+    padding: 15px 5px;
+  }
+  .nav_burger img {
+    width: 32px;
+  }
+  .nav_components {
+    display: none;
+  }
+  .nav_lien {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .bouton_primary, .bouton_secondary {
+    display: flex;
+    height: 46px;
+    min-width: 100px;
+    font-size: 16px;
+  }
+  .cv_descriptif {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cv_descriptif_resume {
+    width: 90%;
+  }
+  .cv_descriptif_points {
+    width: 60vw;
+    text-align: center;
+  }
+  .cv_formation {
+    width: 60vw;
+  }
+  .cv_capacite {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+  }
+  .cv_capacite_separation {
+    width: 80%;
+    height: 3px;
+  }
+  .cv_capacite_components {
+    width: 90%;
+  }
+  .projets {
+    margin: 65px 0 0 0;
+  }
+  .projets_components {
+    margin-top: 40px;
+  }
+  .contact_moyen_contact {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .projets_content {
+    flex-direction: column;
+    width: 90vw;
+    height: fit-content;
+    gap: 10px;
+  }
+  .projets_content_text {
+    margin-top: 10px;
+  }
+  .projets_content_text_description {
+    margin-top: 10px;
+  }
+  .projets_subcomponents {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
