@@ -52,12 +52,12 @@ function Booki() {
             <div id="filtre">
                 <h2 id="titre_filtre">Filtres</h2>
                 <div id="bouton_1">
-                    <a href="#" className="bouton_filtre"><img src={money} alt='money' className='image_filtre' /><h2 className="texte_filtre">Économique</h2></a>
-                    <a href="#" className="bouton_filtre"><img src={person} alt='person' className='image_filtre' /><h2 className="texte_filtre">Familial</h2></a>
+                    <a href="/booki" className="bouton_filtre"><img src={money} alt='money' className='image_filtre' /><h2 className="texte_filtre">Économique</h2></a>
+                    <a href="/booki" className="bouton_filtre"><img src={person} alt='person' className='image_filtre' /><h2 className="texte_filtre">Familial</h2></a>
                 </div>    
                 <div id="bouton_2">
-                    <a href="#" className="bouton_filtre"><img src={heart} alt='heart' className='image_filtre' /><h2 className="texte_filtre">Romantique</h2></a>
-                    <a href="#" className="bouton_filtre"><img src={dog} alt='dog' className='image_filtre' /><h2 className="texte_filtre">Animaux autorisés</h2></a>
+                    <a href="/booki" className="bouton_filtre"><img src={heart} alt='heart' className='image_filtre' /><h2 className="texte_filtre">Romantique</h2></a>
+                    <a href="/booki" className="bouton_filtre"><img src={dog} alt='dog' className='image_filtre' /><h2 className="texte_filtre">Animaux autorisés</h2></a>
                 </div>
             </div>
             <div id="info">
@@ -162,7 +162,7 @@ function Booki() {
                         </div> 
 
                     </div>
-                    <a href="#" id="texte_afficher">Afficher plus</a>  
+                    <a href="/booki" id="texte_afficher">Afficher plus</a>  
                 </section>
 
                 <article id="populaire">
@@ -257,23 +257,23 @@ function Booki() {
                 <nav>
                     <h3>À propos</h3>
                     <ul className="navigation_footer">
-                        <li className="texte_lien_nav"><a href="#" className="lien_nav">Fonctionnement du site</a></li>
-                        <li className="texte_lien_nav"><a href="#" className="lien_nav">Conditions générales</a></li>
-                        <li className="texte_lien_nav"><a href="#" className="lien_nav">Données et confidentialité</a></li>
+                        <li className="texte_lien_nav"><a href="/booki" className="lien_nav">Fonctionnement du site</a></li>
+                        <li className="texte_lien_nav"><a href="/booki" className="lien_nav">Conditions générales</a></li>
+                        <li className="texte_lien_nav"><a href="/booki" className="lien_nav">Données et confidentialité</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <h3>Nos hébergements</h3>
                     <ul className="navigation_footer">
-                        <li className="texte_lien_nav"><a href="#" className="lien_nav">Charte qualité</a></li>
-                        <li className="texte_lien_nav"><a href="#" className="lien_nav">Proposer votre hotel</a></li>
+                        <li className="texte_lien_nav"><a href="/booki" className="lien_nav">Charte qualité</a></li>
+                        <li className="texte_lien_nav"><a href="/booki" className="lien_nav">Proposer votre hotel</a></li>
                     </ul>
                 </nav>
                 <nav>
                     <h3>Assistance</h3>
                     <ul className="navigation_footer">
-                        <li className="texte_lien_nav"><a href="#" className="lien_nav">Centre d'aide</a></li>
-                        <li className="texte_lien_nav"><a href="#" className="lien_nav">Nous contacter</a></li>
+                        <li className="texte_lien_nav"><a href="/booki" className="lien_nav">Centre d'aide</a></li>
+                        <li className="texte_lien_nav"><a href="/booki" className="lien_nav">Nous contacter</a></li>
                     </ul>
                 </nav>
             </div>

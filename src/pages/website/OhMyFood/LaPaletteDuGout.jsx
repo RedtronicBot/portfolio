@@ -178,17 +178,17 @@ function LaPaletteDuGout({onSetPage}) {
                             </article>
                         </div>
                     </section>
-                    <a href="#" className="bouton"><p className="bouton__paragraphe">Commander</p></a>
+                    <a href="/ohmyfood" className="bouton"><p className="bouton__paragraphe">Commander</p></a>
                 </div>
             </main>
             <footer className="footer_ohmyfood">
                 <article className="article_footer">
                     <h3 className="article_footer__titre">ohmyfood</h3>
                     <ul className="article_footer__liste">
-                    <li><a href="#" className="article_footer__lien"><img src={utensils} alt="ustensile" className="article_footer__logo" /><p>Proposer un restaurant</p></a></li>
-                    <li><a href="#" className="article_footer__lien"><img src={handshake} alt="handshake" className="article_footer__logo" /><p>Devenir partenaire</p></a></li>
-                        <li><a href="#" className="article_footer__lien"><p>Mentions légales</p></a></li>
-                        <li><a href="#" className="article_footer__lien"><p>Contact</p></a></li>
+                    <li><a href="/ohmyfood" className="article_footer__lien"><img src={utensils} alt="ustensile" className="article_footer__logo" /><p>Proposer un restaurant</p></a></li>
+                    <li><a href="/ohmyfood" className="article_footer__lien"><img src={handshake} alt="handshake" className="article_footer__logo" /><p>Devenir partenaire</p></a></li>
+                        <li><a href="/ohmyfood" className="article_footer__lien"><p>Mentions légales</p></a></li>
+                        <li><a href="/ohmyfood" className="article_footer__lien"><p>Contact</p></a></li>
                     </ul>
                 </article>
             </footer>
