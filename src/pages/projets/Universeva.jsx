@@ -10,11 +10,11 @@ function Universeva() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />  
-                    <a href='/#/booki'>Booki</a> 
+                    <a href='/portfolio/#/booki'>Booki</a> 
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/betwise'>BetWise</a>
+                    <a href='/portfolio/#/betwise'>BetWise</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>
@@ -34,11 +34,11 @@ function Universeva() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />  
-                    <a href='/#/booki'>Booki</a> 
+                    <a href='/portfolio/#/booki'>Booki</a> 
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/betwise'>BetWise</a>
+                    <a href='/portfolio/#/betwise'>BetWise</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>

@@ -10,11 +10,11 @@ function Piiquante() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
-                    <a href='/#/kasa'>Kasa</a>   
+                    <a href='/portfolio/#/kasa'>Kasa</a>   
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/kanap'>Kanap</a>
+                    <a href='/portfolio/#/kanap'>Kanap</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>
@@ -34,11 +34,11 @@ function Piiquante() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
-                    <a href='/#/kasa'>Kasa</a>   
+                    <a href='/portfolio/#/kasa'>Kasa</a>   
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/kanap'>Kanap</a>
+                    <a href='/portfolio/#/kanap'>Kanap</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>

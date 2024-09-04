@@ -18,11 +18,11 @@ function OhMyFood() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
-                    <a href='/#/la_panthere'>La Panthère</a>   
+                    <a href='/portfolio/#/la_panthere'>La Panthère</a>   
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/booki'>Booki</a>
+                    <a href='/portfolio/#/booki'>Booki</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>
@@ -50,11 +50,11 @@ function OhMyFood() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
-                    <a href='/#/la_panthere'>La Panthère</a>   
+                    <a href='/portfolio/#/la_panthere'>La Panthère</a>   
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/booki'>Booki</a>
+                    <a href='/portfolio/#/booki'>Booki</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>

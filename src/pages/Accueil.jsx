@@ -233,7 +233,7 @@ function Accueil() {
                 <div className="projets_components">
                     <div className="puce_nogap"><div></div><p>Projets de Formation</p></div>
                     <div className="projets_subcomponents">
-                        <a href='/#/kasa'>
+                        <a href='/portfolio/#/kasa'>
                             <div className="projets_content">
                                 <div className="projets_content_text">
                                     <div className='projets_content_text_main'>
@@ -245,7 +245,7 @@ function Accueil() {
                                 <img src={Kasa} alt='Kasa' />
                             </div>
                         </a>
-                        <a href='/#/piiquante'>
+                        <a href='/portfolio/#/piiquante'>
                             <div className="projets_content">
                                 <div className="projets_content_text">
                                     <div className='projets_content_text_main'>
@@ -257,7 +257,7 @@ function Accueil() {
                                 <img src={Piiquante} alt='Piiquante' />    
                             </div>
                         </a>
-                        <a href='/#/kanap'>
+                        <a href='/portfolio/#/kanap'>
                             <div className="projets_content">
                                 <div className="projets_content_text">
                                     <div className='projets_content_text_main'>
@@ -269,7 +269,7 @@ function Accueil() {
                                 <img src={Kanap} alt='Kanap' />
                             </div>
                         </a>
-                        <a href='/#/la_panthere'>
+                        <a href='/portfolio/#/la_panthere'>
                             <div className="projets_content">    
                                 <div className="projets_content_text">
                                     <div className='projets_content_text_main'>
@@ -281,7 +281,7 @@ function Accueil() {
                                 <img src={La_Panthere} alt='La Panthère' />    
                             </div>
                         </a>
-                        <a href='/#/ohmyfood'>
+                        <a href='/portfolio/#/ohmyfood'>
                             <div className="projets_content">    
                                 <div className="projets_content_text">
                                     <div className='projets_content_text_main'>
@@ -293,7 +293,7 @@ function Accueil() {
                                 <img src={OhMyFood} alt='OhMyFood' />    
                             </div>
                         </a>
-                        <a href='/#/booki'>
+                        <a href='/portfolio/#/booki'>
                             <div className="projets_content">
                                 <div className="projets_content_text">
                                     <div className='projets_content_text_main'>
@@ -310,7 +310,7 @@ function Accueil() {
                 <div className="projets_components">
                     <div className="puce_nogap"><div></div><p>Projets Personnels</p></div>
                     <div className="projets_subcomponents">
-                        <a href='/#/universeva'>
+                        <a href='/portfolio/#/universeva'>
                             <div className="projets_content">   
                                 <div className="projets_content_text">
                                     <div className='projets_content_text_main'>
@@ -322,7 +322,7 @@ function Accueil() {
                                 <img src={Universeva} alt='Universeva' />   
                             </div>
                         </a>
-                        <a href='/#/betwise'>
+                        <a href='/portfolio/#/betwise'>
                             <div className="projets_content">    
                                 <div className="projets_content_text">
                                     <div className='projets_content_text_main'>

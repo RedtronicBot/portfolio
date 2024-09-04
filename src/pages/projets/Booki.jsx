@@ -8,11 +8,11 @@ function Booki() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
-                    <a href='/#/ohmyfood'>OhMyFood</a> 
+                    <a href='/portfolio/#/ohmyfood'>OhMyFood</a> 
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/universeva'>Universeva</a>
+                    <a href='/portfolio/#/universeva'>Universeva</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>
@@ -31,11 +31,11 @@ function Booki() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
-                    <a href='/#/ohmyfood'>OhMyFood</a>   
+                    <a href='/portfolio/#/ohmyfood'>OhMyFood</a>   
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/universeva'>Universeva</a>
+                    <a href='/portfolio/#/universeva'>Universeva</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>

@@ -10,11 +10,11 @@ function Kanap() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
-                    <a href='/#/piiquante'>Piiquante</a>  
+                    <a href='/portfolio/#/piiquante'>Piiquante</a>  
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/la_panthere'>La Panthère</a>
+                    <a href='/portfolio/#/la_panthere'>La Panthère</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>
@@ -34,11 +34,11 @@ function Kanap() {
             <div className='projets_page_nav'>
                 <div className='projets_page_nav_components'>
                     <img src={arrow} alt='fleche' className='projets_page_arrow' />
-                    <a href='/#/piiquante'>Piiquante</a>  
+                    <a href='/portfolio/#/piiquante'>Piiquante</a>  
                 </div>
                 <a href='/'>Retour</a>
                 <div className='projets_page_nav_components'>
-                    <a href='/#/la_panthere'>La Panthère</a>
+                    <a href='/portfolio/#/la_panthere'>La Panthère</a>
                     <img src={arrow} alt='fleche' className='projets_page_arrow_reverse' />
                 </div>
             </div>
