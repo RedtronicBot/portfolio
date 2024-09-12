@@ -224,7 +224,7 @@ function Accueil() {
                 </div>
                 <div className="cv_recommendation">
                     <div className="puce_nogap"><div></div><p>Recommandation</p></div>
-                    <p className="cv_recommendation_texte">“J'ai eu l'occasion de mentorer Théo dans le développement d'applications Web, et j'ai pu constater de près son sérieux et son autonomie. Théo a su faire face aux difficultés qu’il a rencontrées avec une implication continue pour atteindre les objectifs, Ce sera avec plaisir que je collaborai avec lui dans l'avenir et je le recommande fortement car il a le potentiel et le profil nécessaire pour réussir dans le domaine du développement.”</p>
+                    <p className="cv_recommendation_texte">“J'ai eu l'occasion de mentorer Théo dans le développement d'applications Web, et j'ai pu constater de près son sérieux et son autonomie. Théo a su faire face aux difficultés qu’il a rencontrées avec une implication continue pour atteindre les objectifs. Ce sera avec plaisir que je collaborerai avec lui à l'avenir, et je le recommande fortement, car il a le potentiel et le profil nécessaires pour réussir dans le domaine du développement.”</p>
                     <p className="cv_recommendation_auteur">Reda Chennoufi Ingénieur Génie Logiciel</p>   
                 </div>
             </div>
